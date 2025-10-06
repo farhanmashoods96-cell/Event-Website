@@ -1,35 +1,49 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+    <div>
+      <header>
+        <h1></h1>
+        <nav>
+          <a href="#home">Home</a> | <a href="#about">About</a> | <a href="#schedule">Schedule</a> | <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <section id="purpose">
+        <h2>purpose</h2>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          events website creating
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      </section>
+
+      <section id="section">
+        <h2>Section</h2>
+       <p>
+        all type of events website 
+       </p>
+      </section>
+
+      <section id="highlights">
+        <h2>Highlights</h2>
+        <p>
+          make website fastly
+        </p>
+      </section>
+
+      <section id="schedule">
+        <h2>10 : 00 AM</h2>
+        <p>
+          Opening Ceermony
+        </p>
+      </section>
+
+      <footer>
+        <h2>farhan</h2>
+        <p>Email: wanderwithme@example.com</p>
+      </footer>
+    </div>
+  );
 }
 
-export default App
+export default App;
